@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 200px 600px 200px ;
+    grid-template-rows: 50px 850px 100px ;
+    grid-template-areas: 
+    "red-container red-container red-container"
+    "yellow-container green-container aqua-container"
+    "yellow-container blue-container aqua-container";
+    height: 1000px;
+    width: 1000px;
+}
+
+.main-container > div{
+    display: flex;
+}
+
+.red-container{
+    background-color: red;
+    grid-area: red-container;
+}
+
+.yellow-container{
+    background-color: yellow;
+    grid-area: yellow-container;
+}
+
+.green-container{
+    background-color: green;
+    grid-area: green-container;
+}
+
+.blue-container{
+    background-color: blue;
+    grid-area: blue-container;
+}
+
+.aqua-container{
+    background-color: aqua;
+    grid-area: aqua-container;
+}
